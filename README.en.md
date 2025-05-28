@@ -1,6 +1,7 @@
 # 📚 Tech Blog Translation Project
 
-This repository is a space for sharing **Korean translations** of various technical blog posts.  
+This repository is a space for sharing **Korean and English translations** of various technical blog
+posts.  
 The topics include programming, infrastructure, machine learning, frontend, blockchain, and more.
 
 Anyone can freely contribute translations, and new contributions are always welcome! 🙌
