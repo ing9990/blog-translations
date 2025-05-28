@@ -10,7 +10,7 @@ Anyone can freely contribute translations, and new contributions are always welc
 ## README
 
 - 🇺🇸 [View README in English](./README.en.md)
-- 🇰🇷 [View README in Korean](./README.ko.md)
+- 🇰🇷 [한국어로 README 보기](./README.ko.md)
 
 ---
 
