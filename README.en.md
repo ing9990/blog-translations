@@ -7,10 +7,17 @@ Anyone can freely contribute translations, and new contributions are always welc
 
 ---
 
+## Directory Explanation
+
+- `/ko`: Directory for translating **non-English blogs** into **Korean**.
+- `/en`: Directory for translating **non-U.S. English blogs** into **English**.
+
+---
+
 ## README
 
-- 🇺🇸 [View README in English](./README.en.md)
 - 🇰🇷 [View README in Korean](./README.ko.md)
+- 🇺🇸 [View README in English](./README.en.md)
 
 ---
 
@@ -18,5 +25,5 @@ Anyone can freely contribute translations, and new contributions are always welc
 
 To get started with contributing, please read:
 
-- 🇺🇸 [Contribution Guide (English)](./.github/CONTRIBUTING.en.md)
 - 🇰🇷 [기여 가이드 (한국어)](./.github/CONTRIBUTING.ko.md)
+- 🇺🇸 [Contribution Guide (English)](./.github/CONTRIBUTING.en.md)

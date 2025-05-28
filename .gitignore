@@ -1,0 +1,12 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# IDE 설정 파일 (IntelliJ, Eclipse 등)
+*.idea/
+
+# 패키지 관리자
+*.gem
+*.zip
+*.tar.gz
+*.tar.bz2
