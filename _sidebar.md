@@ -1,4 +1,10 @@
-- [Readme](/docs/README.md)
-    - [Directory Info](/en/blog/directory-info.md)
+- ko
+  - blog
     - [Directory Info](/ko/blog/directory-info.md)
+    - backend
+      - distributed-system
+        - transactions
           - [Distributed Transaction](/ko/blog/backend/distributed-system/transactions/distributed-transaction.md)
+- en
+  - blog
+    - [Directory Info](/en/blog/directory-info.md)
