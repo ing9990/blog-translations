@@ -1,12 +1,11 @@
-- ko
-  - blog
-    - ios
-      - swift
-        - [swiftui](/ko/blog/ios/swift/swiftui.md)
-    - backend
-      - distributed-system
-        - transactions
-          - [distributed-transaction](/ko/blog/backend/distributed-system/transactions/distributed-transaction.md)
-    - blockchain
-      - consensus
-        - [consensus-algorithms](/ko/blog/blockchain/consensus/consensus-algorithms.md)
+- Kor
+    - Backend
+        - Distributed_System
+            - Transactions
+              - [distributed-transaction](/Kor/Backend/Distributed_System/Transactions/distributed-transaction.md)
+    - IOS
+        - Swift
+          - [swiftui](/Kor/IOS/Swift/swiftui.md)
+    - Blockchain
+        - Consensus
+          - [consensus-algorithms](/Kor/Blockchain/Consensus/consensus-algorithms.md)
