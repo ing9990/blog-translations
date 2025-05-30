@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Techblog Translations</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 상대 경로 안정화를 위한 base 태그 -->
-  <base href="/docs/">
-
-  <script>
-    window.$docsify = {
-      name: 'Techblog Translations',
-      loadSidebar: true,
-      subMaxLevel: 2,
-      routerMode: 'hash',
-      basePath: './'       // 내부 md 경로 상대처리
-    };
-  </script>
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-<div id="app">Loading...</div>
+<div id="app"></div>
 
-<!-- Docsify core -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<script>
+  window.$docsify = {
+    name: 'Techblog Translations',
+    repo: 'ing9990/blog-translations',
+    subMaxLevel: 2,
+    routerMode: 'hash',
+    auto2top: true,
+    search: 'auto',
+    autoSidebar: true //
+  };
+</script>
+
+
+<!-- Docsify v4 -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-auto-sidebar/dist/docsify-auto-sidebar.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
