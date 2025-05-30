@@ -4,6 +4,9 @@
 - ko
   - blog
     - [directory-info](/ko/blog/directory-info.md)
+    - ios
+      - swift
+        - [swiftui](/ko/blog/ios/swift/swiftui.md)
     - backend
       - distributed-system
         - transactions
