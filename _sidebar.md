@@ -4,10 +4,9 @@
             - Transactions
                 - [Distributed Transaction](/Kor/Backend/Distributed_System/Transactions/Distributed_Transaction.md)
                 - [Saga Pattern](/Kor/Backend/Distributed_System/Transactions/Saga_Pattern.md)
-                - [Distributed Transaction](/Kor/Backend/Distributed_System/Transactions/distributed-transaction.md)
     - Ios
         - Swift
             - [Swiftui](/Kor/IOS/Swift/swiftui.md)
     - Blockchain
         - Consensus
-            - [Consensus Algorithms](/Kor/Blockchain/Consensus/consensus-algorithms.md)
+            - [Consensus Algorithms](/Kor/Blockchain/Consensus/Consensus_Algorithms.md)
