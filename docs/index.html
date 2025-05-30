@@ -2,52 +2,49 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8"/>
-  <title>Techblog Translations</title>
+  <meta
+      name="description"
+      content="해외 기술 블로그를 한국어로 번역하여 모았습니다. 누구나 양질의 글을 발견했다면 한국어로 번역하여 글을 이 페이지에 등록할 수 있습니다."
+  />
+  <title>해외 기술블로그 번역</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Stylish and modern Docsify site"/>
 
-  <style>
-    /* 전체 사이드바 폭 넓히기 */
-    .sidebar {
-      width: 300px; /* 기존보다 넓게 */
-      max-width: 100%;
-      transition: all 0.3s;
-    }
-
-    /* 본문 영역도 사이드바 너비만큼 밀어줌 */
-    .content {
-      margin-left: 300px;
-      transition: all 0.3s;
-    }
-
-    /* 사이드바 항목 텍스트가 잘리지 않도록 */
-    .sidebar-nav li a {
-      white-space: normal;
-      overflow: visible;
-      text-overflow: unset;
-      word-break: break-word;
-    }
-
-    /* 반응형: 모바일일 때는 사이드바 자동 접힘 */
-    @media screen and (max-width: 768px) {
-      .sidebar {
-        width: 220px;
-      }
-
-      .content {
-        margin-left: 0;
-      }
-    }
-  </style>
-
-
-  <!-- 🪄 GitBook 스타일 테마 -->
+  <!-- Theme: Simple Dark -->
   <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"/>
+        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
 
   <!-- ✨ 세련된 폰트: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
+
+  <style>
+    :root {
+      /* 기본 폰트 크기 (초기값) → JS에서 동적으로 오버라이드 */
+      font-size: 14px;
+
+      /* 사이드바 너비: rem 단위 기반이므로 줄여줌 (예: 20rem = 약 240~320px 범위) */
+      --sidebar-width: 450px;
+
+      /* 폰트 관련 변수 */
+      --font-family-base: 'Inter', sans-serif;
+      --line-height-base: 1.6;
+
+      /* 모듈 스케일 기반 폰트 크기 시스템 */
+      --modular-scale: 1.333;
+      --modular-scale-0: 1rem;
+      --modular-scale-1: calc(var(--modular-scale-0) * var(--modular-scale));
+      --modular-scale-2: calc(var(--modular-scale-1) * var(--modular-scale));
+      --modular-scale--1: calc(var(--modular-scale-0) / var(--modular-scale));
+      --modular-scale--2: calc(var(--modular-scale--1) / var(--modular-scale));
+
+      /* 예시용 폰트 크기 변수 */
+      --font-size-xs: var(--modular-scale--2);
+      --font-size-s: var(--modular-scale--1);
+      --font-size-m: var(--modular-scale-0);
+      --font-size-l: var(--modular-scale-1);
+      --font-size-xl: var(--modular-scale-2);
+    }
+  </style>
 </head>
 
 <body>
@@ -55,15 +52,19 @@
 
 <script>
   window.$docsify = {
-    name: 'Techblog Translations',
+    name: '🚀 Techblog Translations',
     repo: 'ing9990/blog-translations',
     loadSidebar: true,
-    subMaxLevel: 2,
+    maxLevel: 3,
+    subMaxLevel: 3,
     auto2top: true,
     routerMode: 'hash',
     search: 'auto',
     alias: {
       '/.*/_sidebar.md': '/_sidebar.md'
+    },
+    markdown: {
+      breaks: true
     }
   };
 </script>
