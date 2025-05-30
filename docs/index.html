@@ -2,16 +2,26 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My Docs</title>
+  <title>Docsify 문서 사이트</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 상대 경로 안정화를 위한 base 태그 -->
+  <base href="/docs/">
+
   <script>
     window.$docsify = {
+      name: 'My Docs',
       loadSidebar: true,
-      subMaxLevel: 2
+      subMaxLevel: 2,
+      routerMode: 'hash',  // ⭐ 중요! 404 방지
+      basePath: './'       // 내부 md 경로 상대처리
     };
   </script>
 </head>
 <body>
 <div id="app">Loading...</div>
+
+<!-- Docsify core -->
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
