@@ -10,51 +10,6 @@
   <!-- ✅ Modern Theme -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"/>
-
-  <!-- ✅ Custom Style -->
-  <style>
-    :root {
-      --theme-color: #007acc;
-      --base-font-family: 'Segoe UI', 'Inter', sans-serif;
-      --sidebar-name-font-size: 1.3rem;
-      --sidebar-width: 260px;
-      --sidebar-background: #f9fafb;
-      --sidebar-border-color: #e0e0e0;
-      --sidebar-nav-link-color--hover: #007acc;
-      --sidebar-nav-link-font-size: 15px;
-    }
-
-    /* Custom hover style for sidebar links */
-    .sidebar ul li a {
-      display: block;
-      padding: 6px 12px;
-      border-radius: 6px;
-      transition: all 0.2s ease-in-out;
-    }
-
-    .sidebar ul li a:hover {
-      background-color: #e7f3ff;
-      color: #007acc !important;
-    }
-
-    .sidebar ul li a.active {
-      background-color: #007acc;
-      color: #fff !important;
-      font-weight: 600;
-    }
-
-    /* Nested sidebar visual improvement */
-    .sidebar ul ul {
-      border-left: 2px solid #d0d7de;
-      margin-left: 8px;
-      padding-left: 12px;
-    }
-
-    /* Mobile-friendly spacing */
-    body {
-      font-family: 'Segoe UI', 'Inter', sans-serif;
-    }
-  </style>
 </head>
 <body>
 <div id="app">Loading...</div>
@@ -73,7 +28,11 @@
     }
   };
 </script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
+<!-- plugins -->
+<script
+    src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 <!-- ✅ Docsify Core -->
 <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 <!-- ✅ Docsify Plugins -->
