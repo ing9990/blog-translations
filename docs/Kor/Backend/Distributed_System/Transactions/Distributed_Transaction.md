@@ -1,8 +1,10 @@
----
+```text
 original: https://hazelcast.com/foundations/distributed-computing/distributed-transaction
 translator: @ing9990
 notes: |
   - 이 글은 원문의 기술적 의도를 최대한 유지하며 번역되었습니다.
+```
+
 ---
 
 # 분산 트랜잭션
