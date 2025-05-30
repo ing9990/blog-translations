@@ -1,0 +1,10 @@
+- ko
+    - blog
+        - [directory-info](/ko/blog/directory-info.md)
+        - backend
+            - distributed-system
+                - transactions
+                    - [distributed-transaction](/ko/blog/backend/distributed-system/transactions/distributed-transaction.md)
+- en
+    - blog
+        - [directory-info](/en/blog/directory-info.md)
