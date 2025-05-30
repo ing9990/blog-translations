@@ -10,65 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <style>
-    /* 사이드바 설정 */
-    .sidebar {
-      width: 500px; /* 더욱 넓게 설정 */
-      max-width: 100%;
-      transition: all 0.3s;
-      padding: 15px;
-      box-sizing: border-box;
-    }
-
-    /* 본문을 사이드바만큼 밀어줌 */
-    .content {
-      margin-left: 320px;
-      transition: all 0.3s;
-      padding: 30px;
-      box-sizing: border-box;
-    }
-
-    /* 사이드바 항목 설정 (긴 글자 처리 개선) */
-    .sidebar-nav li a {
-      white-space: normal;
-      overflow-wrap: break-word;
-      word-break: break-word;
-      line-height: 1.5;
-      font-size: 0.9rem;
-    }
-
-    /* 하위 항목의 깊이에 따른 간격 설정 */
-    .sidebar-nav li ul {
-      margin-left: 15px;
-      padding-left: 5px;
-    }
-
-    /* 활성화된 항목 강조 */
-    .sidebar-nav li.active > a {
-      font-weight: 600;
-      color: var(--theme-color);
-    }
-
-    /* 모바일 반응형 처리 */
-    @media screen and (max-width: 768px) {
-      .sidebar {
-        width: 250px;
-        position: fixed;
-        left: -250px;
-        top: 0;
-        height: 100%;
-        background-color: #fff;
-        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
-        z-index: 999;
-      }
-
-      .content {
-        margin-left: 0;
-        padding: 20px;
-      }
-
-      body.sidebar-toggle .sidebar {
-        left: 0;
-      }
+    :root {
+      --sidebar-width: 100rem;
     }
   </style>
 
