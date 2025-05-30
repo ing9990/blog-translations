@@ -13,7 +13,7 @@ def generate_sidebar():
             continue  # docs/는 생략
 
         indent_level = rel_path.count(os.sep)
-        indent = "  " * indent_level
+        indent = " " * 4 * indent_level
         folder = os.path.basename(root)
         sidebar_lines.append(f"{indent}- {folder}")
 
