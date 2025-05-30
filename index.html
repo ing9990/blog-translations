@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
+  <meta charset="UTF-8"/>
+  <title>Techblog Translations</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <meta name="description" content="Tech blog translation project"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+
+  <!-- ✅ Modern Theme -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"/>
+
+  <!-- ✅ Custom Style -->
+  <style>
+    :root {
+      --theme-color: #007acc;
+      --base-font-family: 'Segoe UI', 'Inter', sans-serif;
+      --sidebar-name-font-size: 1.3rem;
+      --sidebar-width: 260px;
+      --sidebar-background: #f9fafb;
+      --sidebar-border-color: #e0e0e0;
+      --sidebar-nav-link-color--hover: #007acc;
+      --sidebar-nav-link-font-size: 15px;
+    }
+
+    /* Custom hover style for sidebar links */
+    .sidebar ul li a {
+      display: block;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #e7f3ff;
+      color: #007acc !important;
+    }
+
+    .sidebar ul li a.active {
+      background-color: #007acc;
+      color: #fff !important;
+      font-weight: 600;
+    }
+
+    /* Nested sidebar visual improvement */
+    .sidebar ul ul {
+      border-left: 2px solid #d0d7de;
+      margin-left: 8px;
+      padding-left: 12px;
+    }
+
+    /* Mobile-friendly spacing */
+    body {
+      font-family: 'Segoe UI', 'Inter', sans-serif;
+    }
+  </style>
 </head>
 <body>
-<div id="app"></div>
+<div id="app">Loading...</div>
 
 <script>
   window.$docsify = {
@@ -26,8 +74,9 @@
   };
 </script>
 
-
-<!-- Docsify v4 -->
+<!-- ✅ Docsify Core -->
 <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<!-- ✅ Docsify Plugins -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
