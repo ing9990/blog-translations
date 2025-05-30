@@ -3,20 +3,29 @@ import os
 BASE_DIR = 'docs'
 SIDEBAR_FILE = os.path.join(BASE_DIR, '_sidebar.md')
 
+def format_title(name):
+    """파일명 또는 폴더명을 타이틀형으로 변환"""
+    name = os.path.splitext(name)[0]  # .md 제거
+    return name.replace('-', ' ').replace('_', ' ').title()
+
 def generate_sidebar():
     sidebar_lines = []
 
     for root, dirs, files in os.walk(BASE_DIR):
-        level = root.replace(BASE_DIR, '').count(os.sep)
-        indent = '  ' * level
+        rel_path = os.path.relpath(root, BASE_DIR)
+        if rel_path == '.':
+            continue
 
-        md_files = [f for f in files if f.endswith('.md') and not f.startswith('_')]
-        rel_root = root.replace(BASE_DIR + '/', '')
+        indent_level = rel_path.count(os.sep)
+        indent = '  ' * indent_level
+        folder_name = os.path.basename(root)
+        sidebar_lines.append(f'{indent}- {folder_name}')
 
-        for md in sorted(md_files):
-            path = os.path.join(rel_root, md).replace('\\', '/')
-            link_text = os.path.splitext(md)[0].replace('-', ' ').title()
-            sidebar_lines.append(f"{indent}- [{link_text}](/{path})")
+        for file in sorted(files):
+            if file.endswith('.md') and not file.startswith('_'):
+                file_path = os.path.join(rel_path, file).replace('\\', '/')
+                title = format_title(file)
+                sidebar_lines.append(f'{indent}  - [{title}](/' + file_path + ')')
 
     with open(SIDEBAR_FILE, 'w', encoding='utf-8') as f:
         f.write('\n'.join(sidebar_lines))
