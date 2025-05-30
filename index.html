@@ -6,11 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Stylish and modern Docsify site"/>
 
-  <link rel="stylesheet" media="(prefers-color-scheme: dark)"
-        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
-  <link rel="stylesheet" media="(prefers-color-scheme: light)"
-        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <style>
+    /* 사이드바 설정 */
+    .sidebar {
+      width: 320px; /* 더욱 넓게 설정 */
+      max-width: 100%;
+      transition: all 0.3s;
+      padding: 15px;
+      box-sizing: border-box;
+    }
 
+    /* 본문을 사이드바만큼 밀어줌 */
+    .content {
+      margin-left: 320px;
+      transition: all 0.3s;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    /* 사이드바 항목 설정 (긴 글자 처리 개선) */
+    .sidebar-nav li a {
+      white-space: normal;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      line-height: 1.5;
+      font-size: 0.9rem;
+    }
+
+    /* 하위 항목의 깊이에 따른 간격 설정 */
+    .sidebar-nav li ul {
+      margin-left: 15px;
+      padding-left: 5px;
+    }
+
+    /* 활성화된 항목 강조 */
+    .sidebar-nav li.active > a {
+      font-weight: 600;
+      color: var(--theme-color);
+    }
+
+    /* 모바일 반응형 처리 */
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        width: 250px;
+        position: fixed;
+        left: -250px;
+        top: 0;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+        z-index: 999;
+      }
+
+      .content {
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      body.sidebar-toggle .sidebar {
+        left: 0;
+      }
+    }
+  </style>
+
+  <!-- 🪄 GitBook 스타일 테마 -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"/>
 
   <!-- ✨ 세련된 폰트: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
@@ -22,10 +83,10 @@
 
 <script>
   window.$docsify = {
-    name: '🚀 Techblog Translations',
+    name: 'Techblog Translations',
     repo: 'ing9990/blog-translations',
     loadSidebar: true,
-    subMaxLevel: 3,
+    subMaxLevel: 2,
     auto2top: true,
     routerMode: 'hash',
     search: 'auto',
@@ -37,13 +98,7 @@
 
 <!-- Docsify Core -->
 <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-<!-- Required -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-
-<!-- Recommended -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+<!-- Plugins -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>

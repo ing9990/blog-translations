@@ -5,8 +5,8 @@
     - Backend
         - Distributed System
             - Transactions
-                - [Springboot가 Saga 패턴을 사용하여 분산 트랜잭션을 구현하는 방법](/Kor/Backend/Distributed_System/Transactions/Springboot가 Saga 패턴을 사용하여 분산 트랜잭션을 구현하는 방법.md)
                 - [분산 트랜잭션](/Kor/Backend/Distributed_System/Transactions/분산 트랜잭션.md)
+                - [스프링부트의 Saga 패턴을 사용한 분산 트랜잭션 구현](/Kor/Backend/Distributed_System/Transactions/스프링부트의 Saga 패턴을 사용한 분산 트랜잭션 구현.md)
     - Blockchain
         - Consensus
-            - [Consensus Algorithms](/Kor/Blockchain/Consensus/Consensus_Algorithms.md)
+            - [블록체인의 합의 알고리즘](/Kor/Blockchain/Consensus/블록체인의 합의 알고리즘.md)
