@@ -6,7 +6,7 @@
                 - [Saga Pattern](/Kor/Backend/Distributed_System/Transactions/Saga_Pattern.md)
     - Ios
         - Swift
-            - [Swiftui](/Kor/IOS/Swift/swiftui.md)
+            - [Swiftui](/Kor/IOS/Swift/SwiftUI.md)
     - Blockchain
         - Consensus
             - [Consensus Algorithms](/Kor/Blockchain/Consensus/Consensus_Algorithms.md)
