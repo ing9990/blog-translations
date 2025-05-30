@@ -1,13 +1,12 @@
-- en
-  - blog
-    - [directory-info](/en/blog/directory-info.md)
 - ko
   - blog
-    - [directory-info](/ko/blog/directory-info.md)
-    - ios
-      - swift
-        - [swiftui](/ko/blog/ios/swift/swiftui.md)
     - backend
       - distributed-system
         - transactions
           - [distributed-transaction](/ko/blog/backend/distributed-system/transactions/distributed-transaction.md)
+    - ios
+      - swift
+        - [swiftui](/ko/blog/ios/swift/swiftui.md)
+    - blockchain
+      - consensus
+        - [consensus-algorithms](/ko/blog/blockchain/consensus/consensus-algorithms.md)
