@@ -15,10 +15,14 @@
   window.$docsify = {
     name: 'Techblog Translations',
     repo: 'ing9990/blog-translations',
+    loadSidebar: true,
     subMaxLevel: 2,
-    routerMode: 'hash',
     auto2top: true,
+    routerMode: 'hash',
     search: 'auto',
+    alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+    }
   };
 </script>
 
