@@ -1,15 +1,15 @@
-# 파일명: .github/scripts/generate_sidebar.py
 import os
+import urllib.parse
 
 BASE_DIR = 'docs'
 SIDEBAR_PATH = os.path.join(BASE_DIR, '_sidebar.md')
 
 
 def format_title(name: str) -> str:
-  """under_score 또는 kebab-case를 Title Case로 바꾸는 함수"""
-  name = os.path.splitext(name)[0]  # .md 제거
+  """파일명을 Title Case로 변환, 확장자 제거"""
+  name = os.path.splitext(name)[0]
   name = name.replace('_', ' ').replace('-', ' ')
-  return name.title()  # 단어마다 첫 글자 대문자
+  return name
 
 
 def generate_sidebar():
@@ -23,8 +23,7 @@ def generate_sidebar():
     indent_level = rel_path.count(os.sep)
     indent = " " * 4 * indent_level
 
-    folder = os.path.basename(root)
-    folder_title = format_title(folder)
+    folder_title = format_title(os.path.basename(root))
     sidebar_lines.append(f"{indent}- {folder_title}")
 
     for f in sorted(files):
@@ -32,8 +31,9 @@ def generate_sidebar():
         filename = os.path.splitext(f)[0]
         file_title = format_title(filename)
         file_path = os.path.join(rel_path, f).replace('\\', '/')
+        encoded_file_path = urllib.parse.quote(file_path)
         sidebar_lines.append(
-          f"{indent}    - [{file_title}](/" + file_path + ")")
+            f"{indent}    - [{file_title}](/" + encoded_file_path + ")")
 
   with open(SIDEBAR_PATH, 'w', encoding='utf-8') as f:
     f.write("\n".join(sidebar_lines))
