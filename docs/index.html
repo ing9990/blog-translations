@@ -19,13 +19,45 @@
 
   <style>
     :root {
+      /* 동적으로 설정될 font-size 기본값 (JS에서 override됨) */
+      font-size: 12px;
+
+      /* 사이드바 너비 */
       --sidebar-width: 50rem;
+
+      /* 폰트 */
+      --font-family-base: 'Inter', sans-serif;
+      --line-height-base: 1.6;
+
+      /* 모듈 폰트 스케일 예시 */
+      --modular-scale: 1.333;
+      --modular-scale-1: 1rem;
+      --font-size-m: var(--modular-scale-1);
+    }
+
+    body {
+      font-family: var(--font-family-base);
+      line-height: var(--line-height-base);
     }
   </style>
 </head>
 
 <body>
 <div id="app">Loading...</div>
+
+<script>
+  // rem 기준을 뷰포트의 1/4로 설정하되, 최소 12px, 최대 32px로 제한
+  function setRootFontSize() {
+    const vw = window.innerWidth;
+    const minSize = 12;
+    const maxSize = 32;
+    const newFontSize = Math.min(Math.max(vw / 4, minSize), maxSize);
+    document.documentElement.style.fontSize = newFontSize + 'px';
+  }
+
+  window.addEventListener('resize', setRootFontSize);
+  setRootFontSize(); // 첫 로딩 시 실행
+</script>
 
 <script>
   window.$docsify = {
@@ -41,8 +73,7 @@
       '/.*/_sidebar.md': '/_sidebar.md'
     },
     markdown: {
-      breaks: true,
-      // Other markdown options
+      breaks: true
     }
   };
 </script>
