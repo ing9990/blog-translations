@@ -4,8 +4,6 @@ This repository is a space for sharing Korean translations of various technical 
 Feel free to contribute your own translations by following the guide below.  
 New contributions are always welcome!
 
----
-
 ## ✍️ How to Add a Translated Post
 
 1. Start by copying [`TRANSLATION_TEMPLATE.md`](../TRANSLATION_TEMPLATE.md) and creating a new `.md`

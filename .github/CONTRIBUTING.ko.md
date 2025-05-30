@@ -4,27 +4,30 @@
 아래 안내에 따라 자유롭게 번역글을 추가해 주세요.  
 새로운 기여는 언제나 환영입니다!
 
----
-
 ## ✍️ 번역글 추가 방법
+
+---
 
 1. [`TRANSLATION_TEMPLATE.md`](../TRANSLATION_TEMPLATE.md)를 복사해 새로운 `.md` 파일을 생성합니다.
 
-2. `blog/` 디렉토리 아래에 **해당 주제에 맞는 폴더**를 만든 뒤, 그 안에 번역 파일을 저장합니다.
+2. `docs/` 디렉토리 아래에 **해당 주제에 맞는 폴더**를 만든 뒤, 그 안에 번역 파일을 저장합니다.
     - 예시:
-        - `blog/devops/kubernetes/`
-        - `blog/frontend/react/`
-        - `blog/ios/swiftui/`
-        - `blog/blockchain/consensus/`
-    - 이미 해당 주제의 디렉토리가 있다면, 그 안에 **파일만 추가**하시면 됩니다.
+        - `/docs/Kor/kubernetes/`
+        - `/docs/Frontend/React/`
+        - `/docs/IOS/SwiftUI/`
+        - `/docs/Blockchain/Consensus/`
+    - 해당 주제의 디렉토리가 없다면 만들어 주시고 추가할 주제의 만약 디렉토리가 이미 있다면, 그 안에 **파일만 추가**하시면 됩니다.
 
-3. 번역을 마쳤다면 Pull Request(PR)을 보내 주세요.
+3. 파일 이름은 Pascal Case + Snake Case로 만들어주세요.
+    - `Hello_My_Name_Is_Blah.md`
 
----
+4. 번역을 마쳤다면 Pull Request(PR)을 보내 주세요.
 
 ## 🔖 참고사항
 
-- 마크다운 파일 상단에는 반드시 **원문 출처(URL)**를 명시해 주세요.
+---
+
+- 마크다운 파일 상단에는 반드시 **원문 출처**를 명시해 주세요.
 - 어색하거나 의미가 모호한 표현이 있는 경우, **해당 문장의 원문을 코드 블록으로 함께 첨부**해 주세요.
 
-감사합니다 🙏
+**감사합니다** 🙏
