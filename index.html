@@ -19,25 +19,30 @@
 
   <style>
     :root {
-      /* 동적으로 설정될 font-size 기본값 (JS에서 override됨) */
+      /* 기본 폰트 크기 (초기값) → JS에서 동적으로 오버라이드 */
       font-size: 12px;
 
-      /* 사이드바 너비 */
-      --sidebar-width: 50rem;
+      /* 사이드바 너비: rem 단위 기반이므로 줄여줌 (예: 20rem = 약 240~320px 범위) */
+      --sidebar-width: 20rem;
 
-      /* 폰트 */
+      /* 폰트 관련 변수 */
       --font-family-base: 'Inter', sans-serif;
       --line-height-base: 1.6;
 
-      /* 모듈 폰트 스케일 예시 */
+      /* 모듈 스케일 기반 폰트 크기 시스템 */
       --modular-scale: 1.333;
-      --modular-scale-1: 1rem;
-      --font-size-m: var(--modular-scale-1);
-    }
+      --modular-scale-0: 1rem;
+      --modular-scale-1: calc(var(--modular-scale-0) * var(--modular-scale));
+      --modular-scale-2: calc(var(--modular-scale-1) * var(--modular-scale));
+      --modular-scale--1: calc(var(--modular-scale-0) / var(--modular-scale));
+      --modular-scale--2: calc(var(--modular-scale--1) / var(--modular-scale));
 
-    body {
-      font-family: var(--font-family-base);
-      line-height: var(--line-height-base);
+      /* 예시용 폰트 크기 변수 */
+      --font-size-xs: var(--modular-scale--2);
+      --font-size-s: var(--modular-scale--1);
+      --font-size-m: var(--modular-scale-0);
+      --font-size-l: var(--modular-scale-1);
+      --font-size-xl: var(--modular-scale-2);
     }
   </style>
 </head>
