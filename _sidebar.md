@@ -1,11 +1,11 @@
 - Kor
     - Backend
-        - Distributed_System
+        - Distributed System
             - Transactions
-              - [distributed-transaction](/Kor/Backend/Distributed_System/Transactions/distributed-transaction.md)
-    - IOS
+                - [Distributed Transaction](/Kor/Backend/Distributed_System/Transactions/distributed-transaction.md)
+    - Ios
         - Swift
-          - [swiftui](/Kor/IOS/Swift/swiftui.md)
+            - [Swiftui](/Kor/IOS/Swift/swiftui.md)
     - Blockchain
         - Consensus
-          - [consensus-algorithms](/Kor/Blockchain/Consensus/consensus-algorithms.md)
+            - [Consensus Algorithms](/Kor/Blockchain/Consensus/consensus-algorithms.md)
