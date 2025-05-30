@@ -23,7 +23,7 @@
       font-size: 12px;
 
       /* 사이드바 너비: rem 단위 기반이므로 줄여줌 (예: 20rem = 약 240~320px 범위) */
-      --sidebar-width: 10 rem;
+      --sidebar-width: 300px;
 
       /* 폰트 관련 변수 */
       --font-family-base: 'Inter', sans-serif;
@@ -49,20 +49,6 @@
 
 <body>
 <div id="app">Loading...</div>
-
-<script>
-  // rem 기준을 뷰포트의 1/4로 설정하되, 최소 12px, 최대 32px로 제한
-  function setRootFontSize() {
-    const vw = window.innerWidth;
-    const minSize = 12;
-    const maxSize = 32;
-    const newFontSize = Math.min(Math.max(vw / 4, minSize), maxSize);
-    document.documentElement.style.fontSize = newFontSize + 'px';
-  }
-
-  window.addEventListener('resize', setRootFontSize);
-  setRootFontSize(); // 첫 로딩 시 실행
-</script>
 
 <script>
   window.$docsify = {
