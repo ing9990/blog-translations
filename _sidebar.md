@@ -1,12 +1,12 @@
-- Kor
+- 한국어
     - Ios
         - Swift
-            - [Swiftui](/Kor/IOS/Swift/SwiftUI.md)
-    - Backend
-        - Distributed System
-            - Transactions
-                - [분산 트랜잭션](/Kor/Backend/Distributed_System/Transactions/분산 트랜잭션.md)
-                - [스프링부트의 Saga 패턴을 사용한 분산 트랜잭션 구현](/Kor/Backend/Distributed_System/Transactions/스프링부트의 Saga 패턴을 사용한 분산 트랜잭션 구현.md)
-    - Blockchain
-        - Consensus
-            - [블록체인의 합의 알고리즘](/Kor/Blockchain/Consensus/블록체인의 합의 알고리즘.md)
+            - [Swiftui](/한국어/IOS/Swift/SwiftUI.md)
+    - 백엔드
+        - 분산 시스템
+            - 트랜잭션
+                - [분산 트랜잭션](/한국어/백엔드/분산 시스템/트랜잭션/분산 트랜잭션.md)
+                - [스프링부트의 Saga 패턴을 사용한 분산 트랜잭션 구현](/한국어/백엔드/분산 시스템/트랜잭션/스프링부트의 Saga 패턴을 사용한 분산 트랜잭션 구현.md)
+    - 블록체인
+        - 합의
+            - [블록체인의 합의 알고리즘](/한국어/블록체인/합의/블록체인의 합의 알고리즘.md)
