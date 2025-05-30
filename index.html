@@ -6,44 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Stylish and modern Docsify site"/>
 
-  <style>
-    /* 전체 사이드바 폭 넓히기 */
-    .sidebar {
-      width: 300px; /* 기존보다 넓게 */
-      max-width: 100%;
-      transition: all 0.3s;
-    }
+  <link rel="stylesheet" media="(prefers-color-scheme: dark)"
+        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: light)"
+        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
 
-    /* 본문 영역도 사이드바 너비만큼 밀어줌 */
-    .content {
-      margin-left: 300px;
-      transition: all 0.3s;
-    }
-
-    /* 사이드바 항목 텍스트가 잘리지 않도록 */
-    .sidebar-nav li a {
-      white-space: normal;
-      overflow: visible;
-      text-overflow: unset;
-      word-break: break-word;
-    }
-
-    /* 반응형: 모바일일 때는 사이드바 자동 접힘 */
-    @media screen and (max-width: 768px) {
-      .sidebar {
-        width: 220px;
-      }
-
-      .content {
-        margin-left: 0;
-      }
-    }
-  </style>
-
-
-  <!-- 🪄 GitBook 스타일 테마 -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"/>
 
   <!-- ✨ 세련된 폰트: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
@@ -55,10 +22,10 @@
 
 <script>
   window.$docsify = {
-    name: 'Techblog Translations',
+    name: '🚀 Techblog Translations',
     repo: 'ing9990/blog-translations',
     loadSidebar: true,
-    subMaxLevel: 2,
+    subMaxLevel: 3,
     auto2top: true,
     routerMode: 'hash',
     search: 'auto',
@@ -70,7 +37,13 @@
 
 <!-- Docsify Core -->
 <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-<!-- Plugins -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<!-- Required -->
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+
+<!-- Recommended -->
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>

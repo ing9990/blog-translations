@@ -1,12 +1,12 @@
 - Kor
-    - Backend
-        - Distributed System
-            - Transactions
-                - [Distributed Transaction](/Kor/Backend/Distributed_System/Transactions/Distributed_Transaction.md)
-                - [Saga Pattern](/Kor/Backend/Distributed_System/Transactions/Saga_Pattern.md)
     - Ios
         - Swift
             - [Swiftui](/Kor/IOS/Swift/SwiftUI.md)
+    - Backend
+        - Distributed System
+            - Transactions
+                - [Springboot가 Saga 패턴을 사용하여 분산 트랜잭션을 구현하는 방법](/Kor/Backend/Distributed_System/Transactions/Springboot가 Saga 패턴을 사용하여 분산 트랜잭션을 구현하는 방법.md)
+                - [분산 트랜잭션](/Kor/Backend/Distributed_System/Transactions/분산 트랜잭션.md)
     - Blockchain
         - Consensus
             - [Consensus Algorithms](/Kor/Blockchain/Consensus/Consensus_Algorithms.md)
