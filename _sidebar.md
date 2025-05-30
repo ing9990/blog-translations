@@ -1,10 +1,10 @@
 - ko
   - blog
-    - [Directory Info](/ko/blog/directory-info.md)
+    - [directory-info](/ko/blog/directory-info.md)
     - backend
       - distributed-system
         - transactions
-          - [Distributed Transaction](/ko/blog/backend/distributed-system/transactions/distributed-transaction.md)
+          - [distributed-transaction](/ko/blog/backend/distributed-system/transactions/distributed-transaction.md)
 - en
   - blog
-    - [Directory Info](/en/blog/directory-info.md)
+    - [directory-info](/en/blog/directory-info.md)
