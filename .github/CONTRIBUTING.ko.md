@@ -12,14 +12,15 @@
 
 2. `docs/` 디렉토리 아래에 **해당 주제에 맞는 폴더**를 만든 뒤, 그 안에 번역 파일을 저장합니다.
     - 예시:
-        - `/docs/Kor/kubernetes/`
-        - `/docs/Frontend/React/`
-        - `/docs/IOS/SwiftUI/`
-        - `/docs/Blockchain/Consensus/`
+        - `/docs/한국어/데브옵스/Kubernetes/파드.md`
+        - `/docs/한국어/프론트엔드/React/Hooks.md`
+        - `/docs/한국어/IOS/SwiftUI/SwiftUI vs UIKit.md`
+        - `/docs/한국어/블록체인/Blockchain/Consensus/POW 합의 알고리즘`
     - 해당 주제의 디렉토리가 없다면 만들어 주시고 추가할 주제의 만약 디렉토리가 이미 있다면, 그 안에 **파일만 추가**하시면 됩니다.
 
-3. 파일 이름은 Pascal Case + Snake Case로 만들어주세요.
-    - `Hello_My_Name_Is_Blah.md`
+3. 파일 이름은 띄어쓰기와 첫 글자 대문자 조합으로 만들어주세요
+    - `Hello My Name Is Blah.md`
+    - `혹은 한글로 만들어 주셔도 됩니다.md`
 
 4. 번역을 마쳤다면 Pull Request(PR)을 보내 주세요.
 

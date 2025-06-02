@@ -9,12 +9,12 @@ New contributions are always welcome!
 1. Start by copying [`TRANSLATION_TEMPLATE.md`](../TRANSLATION_TEMPLATE.md) and creating a new `.md`
    file based on it.
 
-2. Create a **topic-appropriate directory** under the `blog/` folder and place your translation
+2. Create a **topic-appropriate directory** under the `en/` folder and place your translation
    there:
-    - `blog/devops/kubernetes/`
-    - `blog/frontend/react/`
-    - `blog/ios/swiftui/`
-    - `blog/blockchain/consensus/`
+    - `/docs/English/Devops/Kubernetes/Pod.md`
+    - `/docs/English/Frontend/React/Hooks.md`
+    - `/docs/English/IOS/SwiftUI/SwiftUI vs UIKit.md`
+    - `/docs/English/Blockchain/Consensus/POW Consensus Algorithm.md`
     - If a directory for the topic already exists, simply add your file there.
 
 3. Once you're done writing, open a Pull Request (PR).
