@@ -2,7 +2,7 @@ name: Deploy Docs
 
 on:
   push:
-    branches: [ theme, master ]
+    branches: [ main, backend-kotlin-lock, theme ]
 
 jobs:
   deploy:
