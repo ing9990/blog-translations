@@ -6,7 +6,7 @@ SIDEBAR_PATH = os.path.join(BASE_DIR, '_sidebar.md')
 
 
 def format_title(name: str) -> str:
-  """파일명을 Title Case로 변환, 확장자 제거"""
+  """Convert the file name to Title Case and remove the file extension."""
   name = os.path.splitext(name)[0]
   name = name.replace('_', ' ').replace('-', ' ')
   return name
@@ -18,7 +18,7 @@ def generate_sidebar():
   for root, dirs, files in os.walk(BASE_DIR):
     rel_path = os.path.relpath(root, BASE_DIR)
     if rel_path == ".":
-      continue  # docs/는 생략
+      continue
 
     indent_level = rel_path.count(os.sep)
     indent = " " * 4 * indent_level
@@ -37,7 +37,7 @@ def generate_sidebar():
 
   with open(SIDEBAR_PATH, 'w', encoding='utf-8') as f:
     f.write("\n".join(sidebar_lines))
-    print(f"✅ Sidebar generated at {SIDEBAR_PATH}")
+    print(f"Sidebar generated at {SIDEBAR_PATH}")
 
 
 if __name__ == "__main__":
